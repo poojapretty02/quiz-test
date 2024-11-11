@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="start-quiz">
+        <p>Quiz</p>
+        <button id="start-btn" onclick="startQuiz()">Start</button>
+      </div>
+      <div id="task">
+        <div id="quiz-card">
+          <h1>Questions</h1>
+          <p id="question"></p>
+          <p id="answers"></p>
+          <button id="next-btn" onclick="nextQuestion()" style="display: none">
+            Next
+          </button>
+          <h3 id="result"></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
