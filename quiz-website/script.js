@@ -83,13 +83,13 @@ function loadQuestion() {
         .forEach((btn) => (btn.disabled = true));
 
       if (answer === currentQuiz.correct) {
-        button.style.backgroundColor = "green";
+        button.style.backgroundColor = "#2ecc71";
         score++;
       } else {
-        button.style.backgroundColor = "red";
+        button.style.backgroundColor = "#e74c3c";
         document.querySelectorAll("#answers button").forEach((btn) => {
           if (btn.innerText === currentQuiz.correct) {
-            btn.style.backgroundColor = "green";
+            btn.style.backgroundColor = "#2ecc71";
           }
         });
       }
